@@ -1,4 +1,4 @@
 class Photo < ApplicationRecord
-  validates :place, :url, presence: true
-  validates :url, format: {:with => /\.(png|jpg)\Z/i}
+  validates :title, :url, presence: true
+  validates :url, format: {:with => /\.(png|jpg|jpeg)\Z/i}
 end
