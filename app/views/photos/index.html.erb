@@ -16,13 +16,18 @@
 <div class="photo_container">
 
 <% @photos.reverse_each do |photo| %>
-<%= photo.title %>
-<%= image_tag photo.url %> </br>
+<div class='col-md-4'>
+
+<%= image_tag photo.url, class: "img-responsive"%> </br>
+
+</div>
 <%= link_to 'Show', photo %>
-<%= link_to 'Edit', edit_photo_path(photo) %>
+
 <%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
 </div>
+
+
 
 <%= link_to 'New Photo', new_photo_path %>
 
