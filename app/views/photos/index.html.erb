@@ -1,29 +1,24 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class="container">
+
 <h1>Photos</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<h2>Title</h2>
+<p>Url</p>
 
-  <tbody>
-    <% @photos.each do |photo| %>
-      <tr>
-        <td><%= photo.title %></td>
-        <td><%= image_tag photo.url %></td>
-        <td><%= link_to 'Show', photo %></td>
-        <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
-        <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="photo_container">
 
-<br>
+<% @photos.each do |photo| %>
+<%= photo.title %>
+<%= image_tag photo.url %> </br>
+<%= link_to 'Show', photo %>
+<%= link_to 'Edit', edit_photo_path(photo) %>
+<%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+</div>
 
 <%= link_to 'New Photo', new_photo_path %>
+
+</div>
