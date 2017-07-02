@@ -15,7 +15,7 @@
 
 <div class="photo_container">
 
-<% @photos.each do |photo| %>
+<% @photos.reverse_each do |photo| %>
 <%= photo.title %>
 <%= image_tag photo.url %> </br>
 <%= link_to 'Show', photo %>
