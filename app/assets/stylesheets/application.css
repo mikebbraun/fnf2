@@ -3,3 +3,15 @@ body {
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   text-align: center;
 }
+
+#titlebox {
+  margin: .5em 10em;
+}
+
+#urlbox {
+  margin: .5em 10em;
+}
+
+.container {
+  padding: 3em;
+}

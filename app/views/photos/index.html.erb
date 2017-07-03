@@ -7,6 +7,10 @@
 
 <%= render 'form', photo: Photo.new %>
 
+</div>
+
+<div class="container">
+
 <% @photos.reverse_each do |photo| %>
   <div class='col-md-4'>
     <%= image_tag photo.url, class: "img-responsive"%> </br>
