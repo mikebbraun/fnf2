@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-
 <div class="container">
 
+<<<<<<< HEAD
   <h1>Photos</h1>
 
   <h1>New Photo</h1>
+=======
+<h1>Photos</h1>
+<h1>New Photo</h1>
+>>>>>>> 623d3093e8b6c38ba67bd5b2cacf41c53c2dcf58
 
   <%= render 'form', photo: Photo.new %>
 
+<<<<<<< HEAD
 
   <h2>Title</h2>
   <p>Url</p>
@@ -30,7 +35,21 @@
   </div>
 
 
+=======
+<h2>Title</h2>
+<p>Url</p>
+
+
+<% @photos.reverse_each do |photo| %>
+  <div class='col-md-4'>
+    <%= image_tag photo.url, class: "img-responsive"%> </br>
+    <%= link_to 'Show', photo %>
+    <%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+<% end %>
+>>>>>>> 623d3093e8b6c38ba67bd5b2cacf41c53c2dcf58
 
   <%= link_to 'New Photo', new_photo_path %>
+
 
 </div>
