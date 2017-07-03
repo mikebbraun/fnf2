@@ -13,13 +13,11 @@
 
 
   <div id="titlebox" class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :photo_title %>
+    <%= form.text_field :title, id: :photo_title, placeholder: :Title %>
   </div>
 
   <div id="urlbox" class="field">
-    <%= form.label :url %>
-    <%= form.text_area :url, id: :photo_url %>
+    <%= form.text_area :url, id: :photo_url, placeholder: :URL %>
   </div>
 
   <div id="btnurl" class="actions">
