@@ -1,34 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-
 <div class="container">
 
 <h1>Photos</h1>
-
 <h1>New Photo</h1>
 
 <%= render 'form', photo: Photo.new %>
 
-
 <h2>Title</h2>
 <p>Url</p>
 
-<div class="photo_container">
 
 <% @photos.reverse_each do |photo| %>
-<div class='col-md-4'>
-
-<%= image_tag photo.url, class: "img-responsive"%> </br>
-
-</div>
-<%= link_to 'Show', photo %>
-
-<%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <div class='col-md-4'>
+    <%= image_tag photo.url, class: "img-responsive"%> </br>
+    <%= link_to 'Show', photo %>
+    <%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
 <% end %>
-</div>
-
-
 
 <%= link_to 'New Photo', new_photo_path %>
+
 
 </div>
