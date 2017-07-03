@@ -5,13 +5,12 @@ body {
 }
 
 #titlebox {
-  margin: .5em 10em;
+  margin: .5em auto;
+  width: 50%;
+
 }
 
 #urlbox {
-  margin: .5em 10em;
-}
-
-.container {
-  padding: 3em;
+  margin: .5em auto;
+  width: 50%;
 }
