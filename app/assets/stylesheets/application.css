@@ -13,3 +13,24 @@ body {
   margin: .5em auto;
   width: 50%;
 }
+
+.header {
+  background-image: url(http://www.carrier.co.uk/imagegen.ashx?image=/media/1095266/160441048.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+
+}
+
+.ami{
+  font-size: 90px;
+  color: white;
+  font-family: helvetica;
+  padding-top: 170px;
+}
+.amie{
+  font-size: 45px;
+  color: white;
+  font-family: helvetica;
+  padding-top: 8px;
+}
