@@ -34,3 +34,9 @@ body {
   font-family: helvetica;
   padding-top: 8px;
 }
+.picpage{
+  padding: 3em;
+}
+.editpage{
+  padding: 4em;
+}
