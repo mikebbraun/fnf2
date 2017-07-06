@@ -37,6 +37,20 @@ body {
 .picpage{
   padding: 3em;
 }
+
+.p-container {
+  margin: 1em;
+  padding: 1.5em;
+  width: 100%;
+  height: auto;
+  border-style: solid;
+  box-shadow: 10px 10px 4px black;
+}
+
+.p-container .trash {
+  float: left;
+}
+
 .editpage{
   padding: 4em;
 }

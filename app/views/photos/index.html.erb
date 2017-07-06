@@ -12,10 +12,12 @@
 <div class="container">
   <% @photos.reverse_each do |photo| %>
   <div class='col-md-4'>
-    <%= link_to image_tag(photo.url, class: "img-responsive"), photo %>
-    <!-- <%= link_to 'Show', photo %> -->
-    <%= link_to '<span class="glyphicon glyphicon-trash"></span>'.html_safe, photo, method: :delete, data: { confirm: 'Are you sure?' } %>
-</button>
+    <div class="p-container">
+      <%= link_to image_tag(photo.url, class: "img-responsive"), photo %>
+      <!-- <%= link_to 'Show', photo %> -->
+      <span class='trash'><%= link_to '<span class="glyphicon glyphicon-remove"></span>'.html_safe, photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </span>
+    </div>
   </div>
   <% end %>
 
